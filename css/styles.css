@@ -593,6 +593,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 72px 24px 24px 24px;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
@@ -647,7 +648,7 @@ img {
 }
 
 .send-form-field-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .send-form-field-label {
@@ -689,6 +690,10 @@ img {
 
 .send-form-input:focus + .send-form-field-icon {
   fill: #4d5ae5;
+}
+
+.send-form-field-comment {
+  margin-bottom: 16px;
 }
 
 .send-form-message {
