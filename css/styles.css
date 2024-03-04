@@ -511,6 +511,60 @@ img {
   fill: #f4f4fd;
 }
 
+.footer-subscribe-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-email {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.footer-email::placeholder {
+  color: #ffffff;
+}
+
+.footer-subscribe-btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-subscribe-icon {
+  margin-left: 16px;
+  fill: #fff;
+}
 /* =========== /Footer styles =========== */
 
 /* =========== Backdrop styles =========== */
@@ -542,13 +596,11 @@ img {
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 72px;
-  padding-bottom: 24px;
   background-color: #fcfcfc;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-close-btn {
   position: absolute;
@@ -595,13 +647,13 @@ img {
 }
 
 .send-form-field-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .send-form-field-label {
   display: block;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -612,14 +664,14 @@ img {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding-left: 16px;
+  padding-left: 38px;
   background-color: transparent;
-  transition: border-color 250ms linear;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
 }
 
 .send-form-input:focus {
   border-color: #4d5ae5;
-  outline: transparent;
 }
 
 .send-form-input-wrapper {
@@ -632,7 +684,7 @@ img {
   left: 16px;
   transform: translateY(-50%);
   fill: #2e2f42;
-  transition: fill 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-form-input:focus + .send-form-field-icon {
@@ -644,10 +696,15 @@ img {
   border-radius: 4px;
   width: 100%;
   height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   resize: none;
   padding: 8px 16px;
-  transition: border-color 250ms linear;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
 }
 
 .send-form-message::placeholder {
@@ -665,7 +722,7 @@ img {
 
 .send-form-checkbox-label {
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -681,6 +738,9 @@ img {
   cursor: pointer;
   fill: transparent;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-form-privacy-checkbox:checked
@@ -688,7 +748,7 @@ img {
   .send-form-own-checkbox {
   background-color: #404bbf;
   fill: #f4f4fd;
-  border-color: #404bbf;
+  border: none;
 }
 
 .send-form-privacy-checkbox:focus
@@ -703,6 +763,7 @@ img {
 }
 
 .send-form-submit-btn {
+  display: block;
   min-width: 169px;
   height: 56px;
   font-weight: 500;
@@ -715,7 +776,7 @@ img {
   border-radius: 4px;
   background-color: #4d5ae5;
   color: #fff;
-  transition: color 250ms linear, background-color 250ms linear;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .send-form-submit-btn:hover,
