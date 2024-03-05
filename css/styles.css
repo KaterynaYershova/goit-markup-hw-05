@@ -511,6 +511,10 @@ img {
   fill: #f4f4fd;
 }
 
+.footer-subscribe {
+  margin-left: auto;
+}
+
 .footer-subscribe-text {
   margin-bottom: 16px;
   font-weight: 500;
@@ -775,6 +779,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin: 0 auto;
   text-align: center;
   padding: 16px 32px;
   border: none;
